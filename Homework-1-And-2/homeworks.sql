@@ -104,7 +104,7 @@ CREATE TABLE IF NOT EXISTS Orders (
 	ProductID INT,
 	FOREIGN KEY (CustomerID) REFERENCES Customer (CustomerID),
     FOREIGN KEY (ProductID) REFERENCES Product (ProductID)
-	-- "Order" thats why I named it "Orders" is reserved
+	-- "Order" is reserved, thats why I named it "Orders"
 );
 
 CREATE TABLE IF NOT EXISTS Product (
